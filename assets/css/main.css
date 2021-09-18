@@ -1,3 +1,25 @@
+:root{
+
+    /* color */
+    --green-main : hsla(78, 47%, 46%, 1);
+    --green-alt : hsla(104, 90%, 96%, 1);
+    --green-lighter: hsla(100, 100%, 98%, 1);
+
+    /* like touqa */
+    --sim-green-main :hsla(188, 47%, 47%, 1);
+    --sim-green-alt: hsla(188, 43%, 93%, 1);
+
+    --blue-main: hsla(225, 48%, 48%, 1);
+    --blue-alt: hsla(225, 62%, 95%, 1);
+
+    --magenta-main: hsla(333, 48%, 47%, 1);
+    --magenta-alt: hsla(333, 48%, 95%, 1);
+
+    --lumut-main: hsla(68, 47%, 48%, 1);
+    --lumut-alt : hsla(68, 65%, 91%, 1);
+
+}
+
 
 /* HEADER */
 .navbar{
