@@ -1,14 +1,14 @@
 <template>
-  <div class="w-auto p-3 m-2 bg-red-200 rounded-lg">
-      <h3 class="font-semibold text-lg ">
-        aloha
-      </h3>
+  <div class="w-auto p-3 bg-red-200 rounded-lg" :class="type">
+      <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-
+  props:{
+    type:String
+  }
 }
 </script>
 

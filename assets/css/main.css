@@ -1,9 +1,56 @@
 
+/* HEADER */
+.navbar{
+
+}
+
+.navbar__logo{
+
+}
+
+.navbar__menu{
+
+}
+
+.navbar__cta{
+
+}
 
 
 
+/* MAIN */
+/* section trending */
+.section__trending{
+    /* padding: 1rem 0 ; */
+    margin-bottom: 10rem;
+}
+
+.section__trending-card{
+
+}
 
 
+.section__trending-img{
+    width: 120px;
+    height: 120px;
+    border-radius: .7rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.section__trending-title{
+
+}
+
+.section__trending-cat{
+
+}
+
+.section__trending-stars{
+
+}
+
+/* footer */
 .footer{
     background-color: aquamarine;
 }

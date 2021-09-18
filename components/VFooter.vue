@@ -3,10 +3,10 @@
       <!-- logo, description and contact icon -->
     <div class="m-3 footer__sec-1 ">
         <!-- logo elemes -->
-        <div></div>
+        <img src="~/assets/img/logo.png" alt="" class="mb-3">
 
         <!-- address -->
-        <p>
+        <p class="mb-3">
             Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, 
 Kecamatan Setiabudi, Kota Jakarta Selatan, 
 Daerah Khusus Ibukota Jakarta 12950

@@ -12,7 +12,61 @@
       <v-section></v-section>
 
       <!-- trending -->
-      <v-section></v-section>
+      <v-section :mainTitle="'Browser Our Trending'" class="section__trending">
+        <template v-slot:mainMenus>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16">
+            <card-base>
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-alena-shekhovtcova-6940978 1.png" alt="">
+               
+                <div>
+                  <p>Doughnut Milk</p>
+                  <p>Doughnut</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+            
+            <card-base>
+              <div>
+                <div>foto</div>
+                <div>
+                  <p>pizza</p>
+                  <p>category</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+            <card-base>
+              <div>
+                <div>foto</div>
+                <div>
+                  <p>pizza</p>
+                  <p>category</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+            <card-base>
+              <div>
+                <div>foto</div>
+                <div>
+                  <p>pizza</p>
+                  <p>category</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+          </div>
+
+          <div class="md:flex justify-center hidden">
+            <button-base :buttonText="'All Receipt'"></button-base>
+          </div>
+        </template>
+      </v-section>
     </main>
 
 

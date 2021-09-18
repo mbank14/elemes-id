@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- navigasi -->
-    <nav>
+    <nav class="navbar flex justify-between items-center">
         <!-- logo -->
         <div>
             <img src="" alt="logo elemes.id">
         </div>
 
         <!-- navigation -->
-        <div>
+        <div class="hidden md:block">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Promotion <span>HOT</span></a>
@@ -17,13 +17,14 @@
         </div>
 
         <!-- button register and login -->
-        <div>
+        <div class="flex">
+            <button-base :buttonText="'Masuk'" :type="'hidden md:block'"></button-base>
             <button-base :buttonText="'Daftar Sekarang'"></button-base>
         </div>
     </nav>
 
     <!-- hero -->
-    <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- Motto / Jargon -->
         <div>
             <p>
@@ -32,7 +33,11 @@
         </div>
 
         <!-- images -->
-        <div></div>
+        <div class="row-span-2">
+            <div class="flex justify-center items-center">
+                <img src="~/assets/img/hero/Image.png" alt="">
+            </div>
+        </div>
 
         <!-- description and CTA -->
         <div>
@@ -42,7 +47,7 @@
             </p>
 
             <!-- CTA -->
-            <div>   
+            <div class="flex">   
                 <button-base :buttonText="'Daftar Sekarang'"></button-base>
                 <button-base :buttonText="'About Us'"></button-base>
             </div>
@@ -53,7 +58,7 @@
 
 
     <!-- navigasi mobile -->
-    <div>
+    <div class="fixed md:hidden flex justify-around inset-x-0 bottom-0 py-3 bg-white">
         <div>
             <!-- logo -->
             <a href=""></a>
