@@ -25,7 +25,11 @@
     <!-- hero -->
     <div>
         <!-- Motto / Jargon -->
-        <div></div>
+        <div>
+            <p>
+                Good Food Us Good Mood
+            </p>
+        </div>
 
         <!-- images -->
         <div></div>
@@ -33,7 +37,9 @@
         <!-- description and CTA -->
         <div>
             <!-- description -->
-            <p></p>
+            <p>
+                I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.
+            </p>
 
             <!-- CTA -->
             <div>   

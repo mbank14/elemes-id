@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.footer{
+    background-color: aquamarine;
+}
+
+.footer li{
+    margin-bottom: .5rem;
+}
+
+.footer__sec-1{
+    max-width: 350px;
+}
+/* .footer__sec-2{
+    max-width: 450px;
+} */
+/* .footer__sec-3{
+    max-width: 450px;
+} */
+.footer__sec-4{
+    width: 250px;
+}

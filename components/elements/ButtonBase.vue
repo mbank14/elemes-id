@@ -17,7 +17,7 @@ export default {
             type: String,
             require: true
         },
-        style: String,
+        type: String,
         disabled: Boolean
 
     },
