@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
 :root{
 
     /* color */
@@ -20,23 +22,54 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 
 body{
     font-family: 'Rubik', sans-serif;;
 }
 
+.btn--green{
+    background-color: var(--green-main);
+}
+
+.btn--green:hover{
+    background-color: var(--green-alt);
+    color: var(--green-main);
+}
+
+.txt--green{
+    color: var(--green-main);
+}
+
+.btn--abu{
+    background-color: whitesmoke;
+}
+
 /* HEADER */
-.navbar{
-
+header{
+    margin:0;
+    padding: 0;
+    background-image: url('~assets/img/hero/banner.png');
+    background-blend-mode: screen;
+    background-color: whitesmoke;
 }
 
-.navbar__logo{
+/* .navbar{
 
-}
+} */
 
-.navbar__menu{
+/* .navbar__menu{
 
+} */
+
+.navbar__menu-flag{
+    color: white;
+    padding: .2rem .4rem;
+    position: absolute;
+    top: -16px;
+    right: -.4rem;
+    font-size: .45rem;
+    background-color: tomato;
+    border-radius: .5rem;
 }
 
 .navbar__cta{
@@ -52,8 +85,11 @@ body{
     margin-bottom: 10rem;
 }
 
-.section__trending-card{
-
+.section__trending-card:hover{
+    background-image: url('~assets/img/hero/banner.png');
+    background-blend-mode: soft-light;
+    background-size: 200px;
+    /* background-color: whitesmoke; */
 }
 
 
@@ -79,7 +115,8 @@ body{
 
 /* footer */
 .footer{
-    background-color: aquamarine;
+    background-color: var(--green-lighter);
+    
 }
 
 .footer li{
@@ -97,4 +134,23 @@ body{
 } */
 .footer__sec-4{
     width: 250px;
+}
+
+
+/* responsive */
+@media screen and (max-width: 440px) {
+    .navbar__logo img{
+        width: 150px;
+    }
+
+    .navbar__hero-img{
+        display: flex;
+        align-items: flex-start;
+    }
+    .navbar__hero-img-1{
+        width: 250px;
+    }
+    .navbar__hero-img-2{
+        width: 200px;
+    }
 }

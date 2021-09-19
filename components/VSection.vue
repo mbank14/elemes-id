@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <section class="mb-14">
       <!-- Title -->
-      <div class="my-2">
-          <p>{{ mainTitle }}</p>
-          <p>{{ secondTitle }}</p>
+      <div class="my-2 mb-9">
+          <p class="txt--green font-semibold text-2xl md:text-4xl">{{ mainTitle }}</p>
+          <p class="text-lg md:text-3xl font-semibold">{{ secondTitle }}</p>
       </div>
 
       <!-- show menus -->

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="px-4 py-2 rounded-full hover:bg-gray-100" :class="type" :disabled="disabled">
+        <button class="px-4 py-2 rounded-full" :class="type" :disabled="disabled">
             {{ buttonText }}
         </button>
     </div>

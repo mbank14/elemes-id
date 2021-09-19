@@ -1,13 +1,13 @@
 <template>
   <!-- <Tutorial/> -->
-  <div class="container mx-auto px-7">
+  <div >
     <!-- header content -->
     <header>
       <v-header></v-header>
     </header>
     
     <!-- main content -->
-    <main>
+    <main class="container mx-auto px-7">
       <!-- Category -->
       <v-section :mainTitle="'Browser Our Categpry'" class="section__category">
         <template v-slot:mainMenus>
@@ -21,7 +21,7 @@
       <v-section :mainTitle="'Browser Our Trending'" class="section__trending">
         <template v-slot:mainMenus>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16">
-            <card-base>
+            <card-base :type="'section__trending-card'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -34,7 +34,111 @@
                 </div>
               </div>
             </card-base>
-            
+
+            <!-- 2 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-daria-shevtsova-1260968 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Pizza Meat</p>
+                  <p class="txt--green text-sm">Pizza</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 3 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-brett-jordan-842519 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Pizza Paperoni</p>
+                  <p class="txt--green text-sm">Pizza</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 4 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-olga-lioncat-7245464 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Salmon Roll</p>
+                  <p class="txt--green text-sm">Salmon</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 5 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-nishant-aneja-2955819 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Doner Kebab</p>
+                  <p class="txt--green text-sm">Kebab</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 6 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-oleg-magni-1908674 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Cupcake Choco</p>
+                  <p class="txt--green text-sm">Cupcake</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 7 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-karley-saagi-2064449 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Doughnut Unicorn</p>
+                  <p class="txt--green text-sm">Doughnut</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
+
+            <!-- 8 -->
+            <card-base :type="'section__trending-card'">
+              <div>
+                
+                  <img  class="section__trending-img"
+                  src="~/assets/img/trending/pexels-polina-tankilevitch-6419736 1.png" alt="">
+               
+                <div>
+                  <p class="font-semibold text-lg">Kathi Kebab</p>
+                  <p class="txt--green text-sm">Kebab</p>
+                  <i>bintang</i>
+                </div>
+              </div>
+            </card-base>
             
 
           </div>
@@ -47,7 +151,7 @@
     </main>
 
 
-    <footer class="hidden md:block footer rounded-lg">
+    <footer class="hidden md:block footer rounded-lg container mx-auto px-7">
       <v-footer></v-footer>
     </footer>
       <div class="mx-auto py-4">
@@ -116,7 +220,7 @@ export default {
   },
 
   methods:{
-    
+
   }
   }
 </script>
