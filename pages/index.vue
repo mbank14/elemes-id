@@ -9,7 +9,13 @@
     <!-- main content -->
     <main>
       <!-- Category -->
-      <v-section></v-section>
+      <v-section :mainTitle="'Browser Our Categpry'" class="section__category">
+        <template v-slot:mainMenus>
+          <div>
+
+          </div>
+        </template>
+      </v-section>
 
       <!-- trending -->
       <v-section :mainTitle="'Browser Our Trending'" class="section__trending">
@@ -22,48 +28,19 @@
                   src="~/assets/img/trending/pexels-alena-shekhovtcova-6940978 1.png" alt="">
                
                 <div>
-                  <p>Doughnut Milk</p>
-                  <p>Doughnut</p>
+                  <p class="font-semibold text-lg">Doughnut Milk</p>
+                  <p class="txt--green text-sm">Doughnut</p>
                   <i>bintang</i>
                 </div>
               </div>
             </card-base>
             
-            <card-base>
-              <div>
-                <div>foto</div>
-                <div>
-                  <p>pizza</p>
-                  <p>category</p>
-                  <i>bintang</i>
-                </div>
-              </div>
-            </card-base>
-            <card-base>
-              <div>
-                <div>foto</div>
-                <div>
-                  <p>pizza</p>
-                  <p>category</p>
-                  <i>bintang</i>
-                </div>
-              </div>
-            </card-base>
-            <card-base>
-              <div>
-                <div>foto</div>
-                <div>
-                  <p>pizza</p>
-                  <p>category</p>
-                  <i>bintang</i>
-                </div>
-              </div>
-            </card-base>
+            
 
           </div>
 
           <div class="md:flex justify-center hidden">
-            <button-base :buttonText="'All Receipt'"></button-base>
+            <button-base :buttonText="'All Receipt'" :type="'btn--green text-white'"></button-base>
           </div>
         </template>
       </v-section>
@@ -73,6 +50,11 @@
     <footer class="hidden md:block footer rounded-lg">
       <v-footer></v-footer>
     </footer>
+      <div class="mx-auto py-4">
+        <center>
+        <h1 class="text-sm">2021</h1>
+        </center>
+      </div>
 
 
     <!-- <button-base :buttonText="'daftar sekarang'"></button-base>
@@ -93,5 +75,48 @@ import VSection from '~/components/VSection.vue'
 import VFooter from '~/components/VFooter.vue'
 export default {
   components: { ButtonBase, CardBase, VHeader, VSection, VFooter },
+  data() {
+    return{
+      currentIndex: 0,
+      indexSlide : 0,
+      itemCat: [
+        {
+          id: 1,
+          name: 'Cupcake',
+          qty: 22,
+          img: '~/assets/img/category/Frame.svg'
+        },
+        {
+          id: 2,
+          name: 'Pizza',
+          qty: 25,
+          img: '~/assets/img/category/pizza 1.svg'
+        },
+        {
+          id: 3,
+          name: 'Kebab',
+          qty: 12,
+          img: '~/assets/img/category/kebab 1.svg'
+        },
+        {
+          id: 4,
+          name: 'Salmon',
+          qty: 22,
+          img: '~/assets/img/category/salmon 1.svg'
+        },
+        {
+          id: 5,
+          name: 'Doughnut',
+          qty: 1,
+          img: '~/assets/img/category/doughnut 1.svg'
+        },
+      ],
+
+    }
+  },
+
+  methods:{
+    
+  }
   }
 </script>
