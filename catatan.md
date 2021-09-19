@@ -5,4 +5,5 @@ untuk tampilan mobile :
 - ditambahkan menu navigasi
 - beberapa gambar terpotong 
 
+untuk tampilan web :
 - untuk harga yang disection our services seperti button

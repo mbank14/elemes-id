@@ -1,7 +1,7 @@
 <template>
     <div>
         <button class="px-4 py-2 rounded-full" :class="type" :disabled="disabled">
-            {{ buttonText }}
+            <slot>{{ buttonText }}</slot>
         </button>
     </div>
 </template>

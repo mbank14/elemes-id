@@ -16,14 +16,22 @@ Daerah Khusus Ibukota Jakarta 12950
         <div>
             <!-- link email icon -->
             <a href="#">
-                <i></i>a
+                <span class="footer__icon-link txt--green">
+                    <i class="uil uil-envelope"></i>
+                </span>
             </a>
             <!-- link contact icon -->
-            <a href="#">
-                <i></i>a
+            <a href="#" class="footer__icon-link txt--green">
+                <span>
+                    <i class="uil uil-phone"></i>
+                </span>
             </a>
             <!-- link instagram icon -->
-            <a href="#"></a>a
+            <a href="#" class="footer__icon-link txt--green">
+                <span>
+                    <i class="uil uil-capture"></i>
+                </span>
+            </a>
         </div>
     </div>
 
@@ -92,10 +100,14 @@ Daerah Khusus Ibukota Jakarta 12950
         <div>
             <ul>
                 <li class="text-xs">
-                    <i></i>  elemesid@gmail.com
+                    <span>
+                        <i class="uil uil-envelope"></i>
+                        </span>  elemesid@gmail.com
                 </li>
                 <li>
-                    <i></i>  0888 1111 2222 
+                    <span>
+                        <i class="uil uil-phone"></i>
+                        </span>  0888 1111 2222 
                 </li>
             </ul>
         </div>

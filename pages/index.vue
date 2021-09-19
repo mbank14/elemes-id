@@ -11,8 +11,40 @@
       <!-- Category -->
       <v-section :mainTitle="'Browser Our Categpry'" class="section__category">
         <template v-slot:mainMenus>
-          <div>
+          <div class="flex flex-row mb-5">
+          <div v-for="(item, index) in itemCat" :key="index"
+           
+          >
+            <card-base :type="'section__cat-card-item'">
+              <div class="flex flex-col justify-center items-center">
 
+              <div class="mb-10 mt-2">
+                <img class="w-16" :src="require(`../assets/img/category/pizza.svg`)" alt="">
+              </div>
+              <p class="font-semibold">
+                {{item.name}}
+              </p>
+              <p>
+                {{item.qty ? item.qty + 'items' : ''}}
+              </p>
+              </div>
+            </card-base>
+          </div>
+          </div>
+
+          <div class="flex justify-end">
+          <button-base class="btn--green text-white rounded-full mr-3">
+            <span class="bg-green-lighter txt--green rounded-full ">
+              <i class="uil uil-angle-left-b"></i>
+            </span>
+            PREV</button-base>
+          <button-base class="btn--green text-white rounded-full ">
+            NEXT
+            <span class="bg-green-lighter txt--green rounded-full">
+              <i class="uil uil-angle-right-b"></i>
+            </span>
+            </button-base>
+          
           </div>
         </template>
       </v-section>
@@ -21,7 +53,7 @@
       <v-section :mainTitle="'Browser Our Trending'" class="section__trending">
         <template v-slot:mainMenus>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16">
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-green-lighter'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -36,7 +68,7 @@
             </card-base>
 
             <!-- 2 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-green-lighter'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -51,7 +83,7 @@
             </card-base>
 
             <!-- 3 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-magenta-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -66,7 +98,7 @@
             </card-base>
 
             <!-- 4 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-blue-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -81,7 +113,7 @@
             </card-base>
 
             <!-- 5 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-lumut-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -96,7 +128,7 @@
             </card-base>
 
             <!-- 6 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-blue-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -111,7 +143,7 @@
             </card-base>
 
             <!-- 7 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-lumut-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -126,7 +158,7 @@
             </card-base>
 
             <!-- 8 -->
-            <card-base :type="'section__trending-card'">
+            <card-base :type="'section__trending-card bg-lumut-alt'">
               <div>
                 
                   <img  class="section__trending-img"
@@ -148,6 +180,7 @@
           </div>
         </template>
       </v-section>
+
     </main>
 
 
@@ -188,32 +221,33 @@ export default {
           id: 1,
           name: 'Cupcake',
           qty: 22,
-          img: '~/assets/img/category/Frame.svg'
+          img: 'pizza.svg'
         },
         {
           id: 2,
           name: 'Pizza',
           qty: 25,
-          img: '~/assets/img/category/pizza 1.svg'
+          img: 'pizza.svg'
         },
         {
           id: 3,
           name: 'Kebab',
           qty: 12,
-          img: '~/assets/img/category/kebab 1.svg'
+          img: 'kebab.svg'
         },
         {
           id: 4,
           name: 'Salmon',
           qty: 22,
-          img: '~/assets/img/category/salmon 1.svg'
+          img: 'salmon.svg'
         },
         {
           id: 5,
           name: 'Doughnut',
           qty: 1,
-          img: '~/assets/img/category/doughnut 1.svg'
+          img: 'doughnut.svg'
         },
+        {},
       ],
 
     }

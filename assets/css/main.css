@@ -27,6 +27,22 @@ body{
     font-family: 'Rubik', sans-serif;;
 }
 
+.bg-green-lighter{
+    background: var(--green-lighter);
+}
+
+.bg-blue-alt{
+    background: var(--blue-alt);
+}
+
+.bg-magenta-alt{
+    background: var(--magenta-alt);
+}
+
+.bg-lumut-alt{
+    background: var(--lumut-alt);
+}
+
 .btn--green{
     background-color: var(--green-main);
 }
@@ -79,6 +95,20 @@ header{
 
 
 /* MAIN */
+/* section category */
+.section__cat-card-item{
+    min-width: 230px;
+    height: 180px;
+    margin-right: 1rem;
+}
+
+.section__cat-card-item:hover{
+    background-image: url('~assets/img/hero/banner.png');
+    background-blend-mode: soft-light;
+    background-size: 200px;
+    height: 200px;
+}
+
 /* section trending */
 .section__trending{
     /* padding: 1rem 0 ; */
@@ -134,6 +164,13 @@ header{
 } */
 .footer__sec-4{
     width: 250px;
+}
+
+.footer__icon-link:hover{
+    background-color: var(--green-main);
+    color: white;
+    padding: .5rem;
+    border-radius: 50%;
 }
 
 
